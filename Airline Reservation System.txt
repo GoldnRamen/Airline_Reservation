@@ -1,0 +1,14 @@
+Airline Reservation System
+
+An airline needs a system to manage flight bookings. The system should enable passengers to book flights and see real-time availability.
+
+Requirements:
+- Accept passenger details: name, age (indicate if minor), phone, and email.
+- Select the departure and return dates (if round trip).
+- Choose the departure and arrival cities.
+- Select the class (Economy, Business, First Class).
+- Indicate the number of passengers.
+- Show available flights and allow passengers to select their preferred flight.
+- After booking, show a summary of the booking details and total cost.
+- If no flights are available, show a message indicating that no flights are available.
+- Validate all form fields.

@@ -1,0 +1,329 @@
+.navigation{
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 121, 121);
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;
+}
+body{
+    background-color: rgb(178, 219, 205);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.justify{
+    justify-content: center;
+    align-items: center;
+}
+.align{
+    align-items: center;
+}
+.mb{
+    margin-bottom: 20px;
+}
+.mt{
+    margin-top: 20px;
+}
+.bb{
+    border-bottom: 1px solid black;
+}
+.mz{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+.navImage img{
+    width: 120px;
+    height: 80px;
+}
+.navImage{
+    gap: 0;
+}
+.navImage h3 {
+    margin: 0;
+    color: white;
+}
+.navButton{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px gray;
+}
+.buttonDiv{
+    gap: 10px;
+}
+.textDiv{
+    gap: 40px;    
+}
+.textDiv a{
+    text-decoration: none;
+    color: rgb(20, 20, 46);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin: 0, 15px;
+}
+.textDiv a:hover{
+    transform: scale(1.1);
+    color: aliceblue;
+}
+.buttonDiv a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: darkblue;
+}
+.buttonDiv button:hover{
+    transform: scale(1.1);
+}
+#body{
+    background-color: rgb(8, 51, 47);
+    width: 70%;
+    position: relative;
+    top: 120px;
+    /* height: 200px; */
+    z-index: 998;
+}
+#bookForm{
+    background-color: rgb(212, 245, 242);
+    margin: 10px;
+    padding: 50px;
+    width: 90%;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.error{
+    border: 1px solid red;
+    text-decoration: dotted;
+}
+.errorMsg,
+.tripMsg,
+.minorMsg,.emailMsg,
+.areacodeMsg,
+.ticketMsg,
+.minor1Msg,
+.minor1verifyMsg,
+.typeError{
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+.textInput{
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.ageInput{
+    height: 20px;
+    width: 100px;
+    padding: 10px;
+}
+.areacodeInput{
+    height: 40px;
+    width: 75px;
+    padding: 10px;
+}
+.emailInput{
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+}
+.phoneInput{
+    height: 20px;
+    width: 150px;
+    padding: 10px;
+}
+.minorageInput{
+    height: 20px;
+    width: 50px;
+    padding: 10px;
+}
+.tripInput{
+    height: 40px;
+    width: 130px;
+    padding: 10px;
+}
+.timeInput{
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+}
+.dateInput{
+    padding: 10px;
+    height: 30px;
+    width: 100px;
+}
+.placeInput{
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+}
+.ticketInput{
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+}
+.gap{
+    gap: 20px;
+}
+.gap2{
+    gap: 50px;
+}
+#responseLabel1{
+    background-color: white;
+    width: 20px;
+}
+#responseLabel2{
+    background-color: white;
+    width: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.bR{
+    border-right: 1px solid black;
+}
+/* .line{
+    width: 10px;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+} */
+hr{
+    height: 10px;
+    background-color: rgb(22, 41, 34);
+}
+.backgroundwhite{
+    background-color: rgba(10, 63, 63, 0.486);
+    margin: 10px;
+    padding: 50px;
+    width: 90%;
+}
+.hero {
+    background-image: url('https://source.unsplash.com/random/1920x1080?airplane');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.ctaButton {
+    background-color: rgb(22, 41, 34);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.ctaButton:hover {
+    background-color:rgba(47, 49, 48, 0.849);
+}
+
+.services, .destinations, .testimonials, .contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-container, .destination-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.service, .destination, .testimonial {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img, .destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service h3, .destination h3, .testimonial h3 {
+    margin: 10px 0;
+}
+
+.testimonial p {
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: rgb(0, 121, 121);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.submitButton{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(22, 41, 34);
+    color: white;
+}
+.sureButton{
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(22, 41, 34);
+    color: white;
+}

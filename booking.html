@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Delcorp AeroExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="column justify">
+    <nav class="navigation flex">
+        <div class="navImage column">
+            <img src="images/PikPng.com_plane-png_1833399.png" alt="IMAGES">
+            <h3>Delcorp AeroExpress</h3>
+        </div>
+        <div class="textDiv flex justify">
+            <a href="index.html">Home</a> 
+            <a href="#">More</a> 
+            <a href="index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="buttonDiv flex justify">
+            <button class="navButton"><a href="#">Sign up</a></button>
+            <button class="navButton"><a href="#">Login</a></button>
+        </div>
+    </nav>
+
+    <div id="body" class="flex justify">
+        <form id="bookForm">
+            <div class="flex justify">
+                BOOKING APPLICATION
+            </div>
+            <hr>
+            <div class="flex gap">
+                <div class="flex align">
+                    <label for="">First Name:</label>
+                    <div class="column">
+                        <input type="text" id="fName" class="textInput mb mt" placeholder="Enter First Name">
+                        <p class="none errorMsg mz">This field is required!</p>
+                    </div>
+                </div>
+                <div class="flex align">
+                    <label for="">Last Name:</label>
+                    <div class="column">
+                        <input type="text" id="sName" class="textInput mt mb" placeholder="Enter Last Name">
+                        <p class="none errorMsg mz">This field is required!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex align">
+                <label for="">Other Names: </label>
+                <input type="text" class="textInput mt mb" placeholder="Enter Other Names">  
+            </div>
+            <div class="flex align gap">
+                <label for="">Age: </label>
+                <div class="column">
+                    <input class="ageInput mb mt" placeholder="1-999"> 
+                    <p class="none errorMsg mz">This field is required!</p>
+                    <p class="none typeError mz">Enter a number</p>
+                    <p id="tooYoung" class="none minorMsg1 mz">You are not old enough to book this flight!!!</p>
+                </div>
+                <!-- Indicate using an If statement that any passenger below 18 is a minor-->
+                <div class="none guardianInfo column mb mt">
+                    <div class="flex justify align">
+                        <label for="">Enter your legal guardian or parent name</label>
+                        <input type="text" class="guardianNameInput fName">
+                        <p class="none guardiannameError errorMsg">Enter a valid name</p>
+                    </div>
+                    <div class="flex justify align">
+                        <label for="">Enter their phone number</label>
+                        <input type="text" class="guardianNumberInput ">
+                        <p class="none guardiannumberError errorMsg">Enter a valid number</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex align gap">
+                <div class="flex align">
+                    <label for="">Area Code: </label>
+                    <div class="column">
+                        <select name="" id="areacodeInput" class="areacodeInput mb mt">
+                            <option id="code1">Select</option>
+                            <option id="code2">+212 - New York City, USA</option>
+                            <option id="code3">+213 - Los Angeles, USA</option>
+                            <option id="code4">+202 - Washington, D.C., USA</option>
+                            <option id="code5">+44 - United Kingdom</option>
+                            <option id="code6">+33 - France</option>
+                            <option id="code7">+91 - India</option>
+                            <option id="code8">+81 - Japan</option>
+                            <option id="code9">+86 - China</option>
+                            <option id="code10">+234 - Nigeria</option>
+                            <option id="code11">+233 - Ghana</option>
+                            <option id="code12">+250 - Rwanda</option>
+                            <option id="code13">+20 - Egypt</option>
+                            <option id="code14">+971 - United Arab Emirates (Dubai)</option>
+                            <option id="code15">+974 - Qatar</option> 
+                        </select>
+                        <p id="areacodeMsg" class="none areacodeMsg mz">Please select an area code</p>
+                    </div>
+                </div>
+                <div class="flex align">
+                    <label for="">Phone Number:</label>
+                    <div class="column">
+                        <input type="text" class="phoneInput" placeholder="Enter 5 digits">
+                        <p class="none errorMsg">This field is required!</p>
+                        <p class="none numberError errorMsg">Enter numbers only </p>
+                        <p class="none greaterError errorMsg">5 digits exceeded!!!</p>
+                        <p class="none lessError errorMsg">Less than nine digits entered!!!</p>
+                    </div>
+                </div>
+                
+                  
+            </div>
+            <div class="flex align mb mt"> 
+                <label for="">Email Address:</label>
+                <div class="column">
+                    <input type="text" class="emailInput"> 
+                    <p class="none errorMsg">This field is required!</p>
+                    <p class="none emailMsg">Enter a valid email</p>
+                </div>
+            </div>                
+            <br>
+           <hr>
+        
+            <div class="flex align mt mb">
+                <label for="">Trip:</label>
+                <select name="" id="tripInput" class="tripInput">
+                    <option id="trip1">Select</option>
+                    <option id="trip2">One Way</option>
+                    <option id="trip3">Round Trip</option>
+                </select>
+                <p class="none tripMsg">Make a valid selection!</p>
+                
+            </div>
+            <div class="flex mb mt gap">
+               <div class="flex align">
+                    <label for="">Departure Date:</label>
+                    <div class="column">
+                        <input type="date" class="dateInput" id="departureDate"> 
+                        <p id="deptdateMsg" class="none errorMsg">Select a date!!!</p>
+                        <p id="deptErrMsg" class="none errorMsg">Cannot travel back in time!</p>
+                    </div>
+               </div>
+                <div class="flex align">
+                    <label id="returnLabel" for="">Return Date:</label>
+                    <div class="column">
+                        <input type="date" class="dateInput" id="returnDate"> 
+                        <p id="retdateMsg" class="none errorMsg">Select a date!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap2">
+                <div class="column mb mt">
+                    <label for="">Departure City:</label>
+                    <select name="" id="departureCity" class="placeInput">
+                        <option id="departure1">Select</option>
+                        <option id="departure2">(USA-NY) - Newark Liberty International Airport (EWR)</option>
+                        <option id="departure3">(USA-LA) - Los Angeles International Airport (LAX)</option>
+                        <option id="departure4">(USA-DC) - Washington Dulles International Airport (IAD)</option>
+                        <option id="departure5">(UK) - Luton Airport (LTN)</option>
+                        <option id="departure6">(FR) - Nice Côte d'Azur Airport (NCE)</option>
+                        <option id="departure7">(IN) - Indira Gandhi International Airport (DEL)</option>
+                        <option id="departure8">(JP) - Kansai International Airport (KIX)</option>
+                        <option id="departure9">(CN) - Shenzhen Bao'an International Airport (SZX)</option>
+                        <option id="departure10">(NG) - Nnamdi Azikiwe International Airport (ABV) in Abuja</option>
+                        <option id="departure11">(GH) - Kotoka International Airport (ACC) in Accra</option>
+                        <option id="departure12">(RW) - Kigali International Airport (KGL)</option>
+                        <option id="departure13">(EG) - Cairo International Airport (CAI)</option>
+                        <option id="departure14">(AE) - Dubai International Airport (DXB)</option>
+                        <option id="departure15">(QA) - Hamad International Airport (DOH) in Doha</option>
+                    </select>
+                    <p class="none departcityError errorMsg">Make a selection!</p>
+                    <p id="departcityMsg" class="none departcityMsg errorMsg">Please select another destination!</p>
+                </div>
+                <div class="column mb mt">
+                    <label for="">Arrival City:</label>
+                    <select name="" id="arrivalCity" class="placeInput">
+                        <option id="arrival1">Select</option>
+                        <option id="arrival2">(USA-NY) - Newark Liberty International Airport (EWR)</option>
+                        <option id="arrival3">(USA-LA) - Los Angeles International Airport (LAX)</option>
+                        <option id="arrival4">(USA-DC) - Washington Dulles International Airport (IAD)</option>
+                        <option id="arrival5">(UK) - Luton Airport (LTN)</option>
+                        <option id="arrival6">(FR) - Nice Côte d'Azur Airport (NCE)</option>
+                        <option id="arrival7">(IN) - Indira Gandhi International Airport (DEL)</option>
+                        <option id="arrival8">(JP) - Kansai International Airport (KIX)</option>
+                        <option id="arrival9">(CN) - Shenzhen Bao'an International Airport (SZX)</option>
+                        <option id="arrival10">(NG) - Nnamdi Azikiwe International Airport (ABV) in Abuja</option>
+                        <option id="arrival11">(GH) - Kotoka International Airport (ACC) in Accra</option>
+                        <option id="arrival12">(RW) - Kigali International Airport (KGL)</option>
+                        <option id="arrival13">(EG) - Cairo International Airport (CAI)</option>
+                        <option id="arrival14">(AE) - Dubai International Airport (DXB)</option>
+                        <option id="arrival15">(QA) - Hamad International Airport (DOH) in Doha</option>
+                    </select>
+                    <p class="none arrivalcityError errorMsg">Make a selection!</p>
+                </div>
+            </div>
+            <div class="flex align">
+                <label for="">Ticket Class: </label>
+                <select name="" id="ticketClass" class="ticketInput">
+                    <option id="tickclass1">Select</option>
+                    <option id="tickclass2">Economy</option>
+                    <option id="tickclass3">Business</option>
+                    <option id="tickclass4">First Class</option>
+                </select>
+                <p class="none ticketclassMsg errorMsg">Make a valid selection!</p>
+            </div>
+            <br />
+            <hr>
+            
+            <div class="flex gap mb mt">
+                <div class="flex align">
+                    <label for="">Total tickets bought:</label>
+                    <div class="column">
+                        <input type="text" id="numPassengers" class="numberInput mb mt minorageInput" placeholder="">
+                    </div>
+                </div>
+                <div class="flex align">
+                    <label for="">Flight Pricing:</label>
+                    <div class="column">
+                        <input type="text" id="flightPricing" class="textInput mb mt" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap mb mt">
+                <div class="flex align">
+                    <label for="">Flight Status:</label>
+                    <div class="column">
+                        <input type="text" id="unavailableFlights" class="textInput mb mt" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="mb mt">
+                <input id="checkbox" type="checkbox">
+                <label for="">Are you sure all the details entered are accurate?</label>
+                <p id="cWarning" class="none">You must check the box to submit</p>
+            </div>
+            <button type="submit" class="submitButton" id="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div id="booking_info" class="booking_info none column justify">
+        <h1>Your Flight Details</h1>
+        <p class="details" id="details"></p>
+        <div class="flex gap2">
+            <a href="#">
+                <button id="lockBtn" class="sureButton">Go ahead and book this flight</button>
+            </a>
+            <a href="booking.html">
+                <button id="editBtn" class="sureButton">Edit your form</button>
+            </a>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
